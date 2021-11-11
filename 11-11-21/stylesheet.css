@@ -1,0 +1,17 @@
+*{
+    background-color: grey;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+    color: gold;
+} 
+p.center{
+    text-align: center;
+    color: white;
+}
+#main1 {
+    text-align: center;
+}

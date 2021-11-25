@@ -7,6 +7,7 @@
   align-content: center;
   width: 1200px;
   margin: auto;
+  margin-top: 25%;
 }
 .flex-container > div{
     width: 100%;
@@ -14,5 +15,6 @@
     background-color: tan;
     text-align: center;
     border: 10px solid cadetblue;
-    
+    font-size: 30px;
+    line-height: 250px;
 }

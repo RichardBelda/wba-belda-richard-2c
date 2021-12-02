@@ -4,15 +4,16 @@
   flex-wrap: nowrap;
   justify-content: center;
   width: 1200px;
+  background-color: cadetblue;
 }
 .flex-container > div{
     width: 100%;
     height: 250px;
     background-color: tan;
     text-align: center;
-    border: 10px solid cadetblue;
     font-size: 30px;
     line-height: 250px;
+    padding: 20px;
 }
 .main{
     width: 100vw;

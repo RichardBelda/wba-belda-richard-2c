@@ -15,7 +15,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.flex-head-container > button{
+form > button{
     display: flex;
     color: black;
     font-size: 1,1rem;
@@ -28,7 +28,7 @@
     height: 5rem;
     
 }
-.flex-head-container>button:hover{
+form>button:hover{
     background-color: rgb(255, 255, 255);
     transition-duration: 0.4s;
     box-shadow: 10px 10px 72px 19px rgba(235, 231, 231, 0.75) inset;

@@ -46,7 +46,7 @@ ZOE Flexbox
     align-items: center;
     width: 100%;
     flex-direction: column;
-    background-image: url(zoe_background.jpeg);
+    background-image: url(background_images/zoe_background.jpeg);
 }
 .zoe-runes{
     display: flex;
@@ -83,7 +83,7 @@ JHIN Flexbox
     align-items: center;
     width: 100%;
     flex-direction: column;
-    background-image: url(jhin_background.jpeg);
+    background-image: url(background_images/jhin_background.jpeg);
 }
 .jhin-runes{
     display: flex;

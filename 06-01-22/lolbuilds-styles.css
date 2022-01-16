@@ -14,6 +14,18 @@ body{
 }
 .runes-img{
     height: 2rem;
+    width: 2rem;
+}
+.fragment-img{
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.runes-row{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
 ZOE Flexbox
@@ -103,6 +115,8 @@ ZOE Runes row
     width: 20%;
     height: 100%;
     flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 .zoe-divider{
     display: flex;
@@ -113,11 +127,17 @@ ZOE Runes row
     display: flex;
     width: 20%;
     height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 .zoe-fragments{
     display: flex;
     width: 20%;
     height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 }
 .zoe-runes-stats{
     display: flex;
@@ -130,26 +150,20 @@ ZOE Runes row - PRIMARY ROW
 .zoe-primary-row-1{
     display: flex;
     width: 100%;
-    height: auto;
-    justify-content: center;
 }
 .zoe-primary-row-2{
     display: flex;
     width: 100%;
-    height: auto;
 }
 .zoe-primary-row-3{
     display: flex;
     width: 100%;
-    height: auto;
 }
 .zoe-primary-row-4{
     display: flex;
     width: 100%;
-    height: auto;
 }
 .zoe-primary-row-5{
     display: flex;
     width: 100%;
-    height: auto;
 }

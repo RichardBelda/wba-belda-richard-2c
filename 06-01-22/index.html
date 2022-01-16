@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,32 @@
     <title>Web for me</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
+    <script>
+        function displayIframeDynMap() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+        function displayIframeOPGG() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+        function displayIframeLoLBuilds() {
+            document.getElementById("iframeDisplayLoLBuilds").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+    </script>
 </head>
+
 <body>
     <div class="flex-head">
         <div class="flex-head-container">
-            <form action="http://map.justporo.cz" method="get" target="_blank">
-                <button class="head-1">MC Dynmap</button>
-            </form> 
-            <form action="https://eune.op.gg/summoner/userName=SirChumchum" method="get" target="_blank"> 
-                <button class="head-2">OP.GG</button>
-            </form>
-            <form action="http://map.justporo.cz" method="get" target="_blank">
-                <button class="head-3">LoL Builds</button>
-            </form>
-               
+            <button id="dynmap" onclick="getDynmap()">MC DynMap</button>
+            <button id="opgg" onclick="getOpgg()">OP.GG</button>
+            <button onclick="displayIframeLoLBuilds()">LoL Builds</button>
         </div>
-    <!-- </div>
-    <div class="dynmap-body">
-        <iframe src="http://map.justporo.cz" style="border: none; height: 92vh; width: 100%;"></iframe>
-    </div>  -->
+    </div>
+    <div id="iframeDisplayLoLBuilds" class="full-height"></div>
+    
 </body>
+
 </html>

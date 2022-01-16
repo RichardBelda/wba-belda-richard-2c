@@ -1,3 +1,10 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.full-height{
+    height: 100%;
+}
 /* HLAVIČKA */
 .flex-head{
     display: flex;
@@ -17,7 +24,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-form > button{
+button{
     display: flex;
     color: black;
     font-size: 1,1rem;
@@ -30,7 +37,7 @@ form > button{
     height: 8vh;
     
 }
-form>button:hover{
+button:hover{
     background-color: rgb(255, 255, 255);
     transition-duration: 0.4s;
     box-shadow: 10px 10px 72px 19px rgba(235, 231, 231, 0.75) inset;

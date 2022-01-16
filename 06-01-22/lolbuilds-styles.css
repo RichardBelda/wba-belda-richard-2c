@@ -1,6 +1,13 @@
 body{
     padding-top: 8vh;
 }
+.zoe-main{
+    height: 50%;
+    width: 100%;
+}
+.jhin-main{
+
+}
 .body-container{
     height: 100%;
     width: 100%;
@@ -20,6 +27,9 @@ body{
     height: 1.7rem;
     width: 1.7rem;
 }
+.off-img{
+    opacity: 0.5;
+}
 .runes-row{
     display: flex;
     height: 3rem;
@@ -34,8 +44,9 @@ ZOE Flexbox
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
+    background-image: url(zoe_background.jpeg);
 }
 .zoe-runes{
     display: flex;
@@ -52,7 +63,7 @@ ZOE Flexbox
     height: 30rem;
     background-color: rgb(235, 232, 232);
     box-shadow: 0 0px 10px 0px rgb(201, 198, 198), 0 6px 30px 0 rgb(207, 205, 205);
-
+    
 }
 .zoe-spells{
     display: flex;
@@ -61,6 +72,7 @@ ZOE Flexbox
     height: 30rem;
     background-color: rgb(235, 232, 232);
     box-shadow: 0 0px 10px 0px rgb(201, 198, 198), 0 6px 30px 0 rgb(207, 205, 205);
+    margin-bottom: 5rem;
 } 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
 JHIN Flexbox
@@ -69,8 +81,9 @@ JHIN Flexbox
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
+    background-image: url(jhin_background.jpeg);
 }
 .jhin-runes{
     display: flex;
@@ -78,6 +91,7 @@ JHIN Flexbox
     height: 30rem;
     background-color: white;
     box-shadow: 0 0px 10px 0 rgb(201, 198, 198), 0 6px 30px 0 rgb(207, 205, 205);
+    margin-top: 5rem;
 }
 .jhin-items{
     display: flex;
@@ -92,12 +106,6 @@ JHIN Flexbox
     height: 30rem;
     background-color: rgb(235, 232, 232);
     box-shadow: 0 0px 10px 0px rgb(201, 198, 198), 0 6px 30px 0 rgb(207, 205, 205);
-}
-/* ---------------------------------------------------------------------------------------------------------------------------------------------------
-Gap between flex items
---------------------------------------------------------------------------------------------------------------------------------------------------- */
-.flex-gap{
-    height: 10rem;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
 ZOE Runes row

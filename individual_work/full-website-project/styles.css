@@ -23,12 +23,12 @@ html, body{
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 button{
     display: flex;
     color: black;
     font-size: 1,1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
     align-items: center;
     width: 8rem;

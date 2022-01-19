@@ -150,10 +150,14 @@ JHIN Flexbox
 }
 .jhin-items{
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 30rem;
     background-color: rgba(235, 232, 232, 0.8);
     box-shadow: 0 0px 10px 0px rgb(201, 198, 198), 0 6px 30px 0 rgb(207, 205, 205);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .jhin-spells{
     display: flex;

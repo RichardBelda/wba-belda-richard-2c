@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <script>
+        function displayIframeDynMap() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"dynmap.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+        function displayIframeOPGG() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"opgg.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
         function displayIframeLoLBuilds() {
-            document.getElementById("iframeDisplayLoLBuilds").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
     
         }
     </script>
@@ -19,16 +27,12 @@
 <body>
     <div class="flex-head">
         <div class="flex-head-container">
-            <form action="http://map.justporo.cz" method="get" target="_blank">
-                <button>MC DynMap</button>
-            </form>
-            <form action="https://eune.op.gg/summoner/userName=SirChumchum" method="get" target="_blank"> 
-                <button>OP.GG</button>
-            </form>
+            <button onclick="displayIframeDynMap()">MC DynMap</button>
+            <button onclick="displayIframeOPGG()">OP.GG</button>
             <button onclick="displayIframeLoLBuilds()">LoL Builds</button>
         </div>
     </div>
-    <div id="iframeDisplayLoLBuilds" class="full-height"></div>
+    <div id="iframeDisplay" class="full-height"></div>
 </body>
 
 </html>

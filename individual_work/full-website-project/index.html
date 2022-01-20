@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web for me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <script>
+        function displayIframeDynMap() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"dynmap.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+        function displayIframeOPGG() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"opgg.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+        function displayIframeLoLBuilds() {
+            document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"lolbuilds.html\" height=\"100%\" width=\"100%\" ></iframe>";
+    
+        }
+    </script>
+</head>
+
+<body>
+    <div class="flex-head">
+        <div class="flex-head-container">
+            <button onclick="displayIframeDynMap()">MC DynMap</button>
+            <button onclick="displayIframeOPGG()">OP.GG</button>
+            <button onclick="displayIframeLoLBuilds()">LoL Builds</button>
+        </div>
+    </div>
+    <div id="iframeDisplay" class="full-height"></div>
+</body>
+
+</html>

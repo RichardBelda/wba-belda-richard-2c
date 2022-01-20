@@ -1,4 +1,11 @@
-/* HLAVIČKA */
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.full-height{
+    height: 100%;
+}
+/* HEAD */
 .flex-head{
     display: flex;
     width: 100%;
@@ -16,12 +23,12 @@
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-form > button{
+button{
     display: flex;
     color: black;
     font-size: 1,1rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     justify-content: center;
     align-items: center;
     width: 8rem;
@@ -30,7 +37,7 @@ form > button{
     height: 8vh;
     
 }
-form>button:hover{
+button:hover{
     background-color: rgb(255, 255, 255);
     transition-duration: 0.4s;
     box-shadow: 10px 10px 72px 19px rgba(235, 231, 231, 0.75) inset;

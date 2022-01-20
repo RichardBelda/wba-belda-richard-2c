@@ -53,6 +53,11 @@ body{
     height: 3rem;
     justify-content: space-between;
 }
+.items-row-0{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
 .items-row-1{
     display: flex;
     gap: 2rem;

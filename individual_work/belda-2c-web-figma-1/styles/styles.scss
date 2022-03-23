@@ -1,0 +1,29 @@
+$back-color: #CBC1B1;
+$button-color: #7C7474;
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1em;
+    background: #E5E5E5;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@import "modules/_header.scss";
+@import "modules/_section-one.scss";
+@import "modules/_section-two.scss";
+@import "modules/_footer.scss";
+@import "modules/_information.scss";
+@import "modules/_contacts.scss";
+@import "modules/_button.scss";
+
+
+
+
+

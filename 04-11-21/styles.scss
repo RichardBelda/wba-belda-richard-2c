@@ -1,0 +1,208 @@
+// VARIABLES
+$ten-px: 0.625rem;
+$eleven-px: 0.6875rem;
+$twelve-px: 0.75rem;
+$thirteen-px: 0.8125rem;
+$fourteen-px: 0.875rem;
+$full-width: 100%;
+
+// MIXINS
+@mixin lato-theme {
+    font-family: 'Lato';
+    font-style: normal;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#absolute{
+    margin-top: 7.125rem;
+    width: $full-width;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+/* --------------------------------------------------------------------------------------------------------------
+ELEMENTS
+-------------------------------------------------------------------------------------------------------------- */
+body{
+    background: #E5E5E5;
+}
+h1{
+    @include lato-theme;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+h2{
+    @include lato-theme;
+    font-weight: 700;
+    font-size: $eleven-px;
+    line-height: $thirteen-px;
+    text-align: center;
+}
+h3{
+    @include lato-theme;
+    font-weight: 700;
+    font-size: $twelve-px;
+    line-height: $fourteen-px;
+}
+p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: $ten-px;
+    line-height: $twelve-px;
+    align-items: center;
+    letter-spacing: 0.1em;  
+}
+/* --------------------------------------------------------------------------------------------------------------
+HEADER
+-------------------------------------------------------------------------------------------------------------- */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $full-width;
+    height: 4rem;
+    background-color: #CBC1B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 4rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+.links{
+    height: 4rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+#burger-menu-icon{
+    display: flex;
+    align-items: center;
+}
+/* --------------------------------------------------------------------------------------------------------------
+CONTENT
+-------------------------------------------------------------------------------------------------------------- */
+.content{
+    width: $full-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* SECTION 1 */
+.section-1{
+    width: 80%;
+    height: 12.5rem;
+    background: #7C7474;
+    color: #F8F7EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#section-1-title{
+    display: flex;
+    justify-content: center;
+}
+#section-1-text{
+    width: 90%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 0.8125rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+#section-1-button{
+
+}
+#button-1{
+    width: 7.5rem;
+    height: 1.5625rem;
+    background: rgba(248, 247, 236, 0.3);
+}
+#button-1-text{
+    @include lato-theme;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    color:black
+}
+/* SECTION 2 */
+.section-2{
+    width: 80%;
+    height: 33.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-2-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: $full-width;
+    gap: 1rem;
+}
+.section-2-grid-image{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.section-2-grid-text{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: $full-width;
+}
+#button-2{
+    width: 7.5rem;
+    height: 1.5625rem;
+    background: #7C7474;
+}
+#button-2-text{
+    @include lato-theme;
+    font-weight: 600;
+    font-size: $eleven-px;
+    line-height: $thirteen-px;
+    color: #F8F7EC;
+}
+/* --------------------------------------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------------------------------------- */
+.footer{
+    width: $full-width;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #CBC1B1;;
+}
+.footer-text{
+    @include lato-theme;
+    font-weight: 500;
+    font-size: $twelve-px;
+    line-height: 160%;
+    display: flex;
+    text-align: center;
+}

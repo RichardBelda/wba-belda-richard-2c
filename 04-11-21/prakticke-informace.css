@@ -1,0 +1,146 @@
+#absolute{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* --------------------------------------------------------------------------------------------------------------
+ELEMENTS
+-------------------------------------------------------------------------------------------------------------- */
+body{
+    background: #E5E5E5;
+}
+h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+h2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+}
+h3{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+h4{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;  
+}
+/* --------------------------------------------------------------------------------------------------------------
+HEADER
+-------------------------------------------------------------------------------------------------------------- */
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: #CBC1B1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    height: 4rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+.links{
+    height: 4rem;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+#burger-menu-icon{
+    display: flex;
+    align-items: center;
+}
+/* --------------------------------------------------------------------------------------------------------------
+CONTENT
+-------------------------------------------------------------------------------------------------------------- */
+.content{
+    margin-top: 7.125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.content-box{
+    display: flex;
+    flex-direction: row;
+    height: 3.125rem;
+    width: 80%;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content-text{
+
+}
+/* --------------------------------------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------------------------------------- */
+.footer{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #CBC1B1;;
+}
+.footer-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}

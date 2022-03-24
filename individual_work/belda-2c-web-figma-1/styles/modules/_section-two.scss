@@ -1,0 +1,97 @@
+.section-two{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.section-two-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.section-two-title{
+    font-size: large;
+}
+
+.section-two-content-item{
+    width: 25%;
+    img{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+    
+    p{
+        font-style: normal;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-two{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 0.825rem;
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+            line-height: 13px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+    }
+
+    .section-two-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+        gap: 5vh;
+    }
+
+    .section-two-content-item{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 80%;
+        
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    
+        h3{
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        
+        p{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 0.625rem;
+            line-height: 12px;
+            font-family: Lato, sans-serif;
+            font-style: normal;
+            letter-spacing: 0.1em;
+        }
+    }
+}

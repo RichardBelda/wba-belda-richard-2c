@@ -24,6 +24,10 @@
 
     div:hover{
         background: $button-color;
+        -webkit-transition: background-color 0.8s;
+        -moz-transition: background-color 0.8s;
+        -o-transition: background-color 0.8s;
+        transition: background-color 0.8s;
     }
 }
 

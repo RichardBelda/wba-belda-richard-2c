@@ -1,3 +1,11 @@
+@import "modules/_header.scss";
+@import "modules/_section-one.scss";
+@import "modules/_section-two.scss";
+@import "modules/_footer.scss";
+@import "modules/_information.scss";
+@import "modules/_contacts.scss";
+@import "modules/_button.scss";
+
 $back-color: #CBC1B1;
 $button-color: #7C7474;
 
@@ -14,16 +22,3 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-
-@import "modules/_header.scss";
-@import "modules/_section-one.scss";
-@import "modules/_section-two.scss";
-@import "modules/_footer.scss";
-@import "modules/_information.scss";
-@import "modules/_contacts.scss";
-@import "modules/_button.scss";
-
-
-
-
-

@@ -1,0 +1,36 @@
+body{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    animation-name: disco;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: green;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition:2s linear;
+}
+
+@keyframes animate{
+    0%   {margin-bottom: 500px; background: green;}
+    25%  {margin-right: 500px; background: red;}
+    50%  {margin-top: 500px; background: yellow;}
+    75% {margin-left: 500px; background: blue;}
+    100% {margin-bottom: 500px; background: orange;}
+}  
+
+@keyframes disco{
+    0% {background: white;}
+    100% {background: black;}
+}
+
+div:hover{
+    background: pink !important;
+    transition-delay: 5s;
+}

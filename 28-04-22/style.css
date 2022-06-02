@@ -5,9 +5,10 @@
 }
 
 .divclass{
+    margin-top: 1rem;
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    border: 5px;
-    border-color: orange;
+    border: 5px solid orange;
+    padding: 1rem;
 }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900&amp;subset=latin,latin-ext"
+        rel="stylesheet">
     <style>
         html,
         body,
@@ -138,7 +140,11 @@
             border-spacing: 0;
         }
 
-        .full-width{
+        * {
+            font-family: 'Lato';
+        }
+
+        .full-width {
             width: 100%;
         }
 
@@ -147,27 +153,57 @@
             flex-direction: column;
         }
 
-        aside{
+        aside {
             width: 15%;
             height: 100%;
             background-color: black;
             color: white;
         }
 
-        section{
+        section {
             display: flex;
             width: 100%;
             height: 100%;
         }
 
-        .content{
+        .content {
             flex-direction: column;
             background-color: gray;
         }
 
-        #info{
-            height: 25%;
+        #info {
+            display: flex;
+            align-items: center;
+            min-height: 25%;
             background-color: aqua;
+        }
+
+        #info-image {
+            width: 12em;
+            height: 12em;
+            background: rebeccapurple;
+            margin: 1.7em;
+        }
+
+        #info-text {
+            display: flex;
+            height: 12em;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        span {
+            color: gray;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10%;
+            background-color: black;
+            color: white;
+            border-top: 1px solid grey;
         }
     </style>
 </head>
@@ -179,7 +215,20 @@
         </aside>
         <section class="content">
             <div id="info" class="full-width">
+                <div id="info-image">
 
+                </div>
+                <div id="info-text">
+                    <div>
+                        playlist
+                    </div>
+                    <h1>
+                        Skladby, které se ti líbí
+                    </h1>
+                    <div>
+                        denowq <span>- 666 skladeb</span>
+                    </div>
+                </div>
             </div>
             <div>
 
@@ -190,7 +239,20 @@
         </aside>
     </section>
     <footer>
+        <div>
+            ahoj
+        </div>
+        <div>
+            <div>
 
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            ahoj
+        </div>
     </footer>
 </body>
 

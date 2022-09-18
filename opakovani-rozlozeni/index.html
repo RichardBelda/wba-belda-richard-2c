@@ -164,7 +164,7 @@
 
         .content {
             flex-direction: column;
-            background-color: #1d1d1d;
+            background-color: #121212;
         }
 
         #info {
@@ -295,6 +295,122 @@
             width: 35%;
             border-radius: 1em;
         }
+
+        #playlist {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            height: auto;
+            height: 75%;
+        }
+
+        #playlist-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20%;
+            background: linear-gradient(180deg , rgba(165, 78, 109, 0.4),#121212 );
+        }
+
+        #playlist-controls > div {
+            display: flex;
+            align-items: center;
+            margin-left: 2em;
+            gap: 1.7em;
+        }
+
+        #playlist-controls > img {
+            height: 2em;
+            width: 2em;
+            margin-right: 2em;
+        }
+
+        #download-icon {
+            height: 2.5em;
+            width: 2.5em;
+        }
+
+        #playlist-grid {
+            height: 80%;
+            padding: 0 2em;
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            align-items: flex-start;
+            margin-top: 1em;
+        }
+
+        #song-number{
+            justify-self: center;
+            grid-column: 1/2;
+        }
+
+        #song-name {
+            grid-column: 2/11;
+        }
+
+        #song-album {
+            grid-column: 11/18;
+        }
+
+        #song-controls {
+            grid-column: 18/25;
+        }
+
+        #playlist-grid > :nth-child(5n){
+            grid-column: 1/25;
+        }
+
+        #song-number > div {
+            display: flex;
+            align-items: center;
+            height: 3em;
+            color: #b3b3b3;
+        }
+
+        #song-name > div {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            height: 3em;
+            color: #f8ffff;
+        }
+
+        .song > img {
+            height: 2.7em;
+            width: 2.7em;
+        }
+
+        #song-album > div {
+            display: flex;
+            align-items: center;
+            height: 3em;
+            color: #b3b3b3;
+        }
+
+        #song-controls > div {
+            display: flex;
+            align-items: center;
+            height: 3em;
+            color: #b3b3b3;
+        }
+
+        #nazev {
+            color: #b3b3b3;
+        }
+
+        #play-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4em;
+            width: 4em;
+            background-color: #1ed760;
+            border-radius: 50%;
+        }
+
+        #play-button > img {
+            height: 1.5em;
+        }
     </style>
 </head>
 
@@ -320,8 +436,86 @@
                     </h3>
                 </div>
             </div>
-            <div>
-
+            <div id="playlist">
+                <div id="playlist-controls" class="full-width">
+                    <div>
+                        <div id="play-button">
+                            <img src="play.svg" alt="">
+                        </div>
+                        <img id="download-icon" src="download.svg" alt="">
+                    </div>
+                    <img src="search.svg" alt="">
+                </div>
+                <div id="playlist-grid">
+                    <div id="song-number">
+                        <div>#</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </div>
+                    <div id="song-name">
+                        <div id="nazev">NÁZEV</div>
+                        <div class="song">
+                            <img src="TOY.png" alt="">
+                            <div>TOY (ATRIP Remix)</div>
+                        </div>
+                        <div class="song">
+                            <img src="written-in-the-stars.png" alt="">
+                            <div>Written in the Stars (feat. Eric Turner)</div>
+                        </div>
+                        <div class="song">
+                            <img src="shadow.png" alt="">
+                            <div>Shadow</div>
+                        </div>
+                        <div class="song">
+                            <img src="into-the-black.png" alt="">
+                            <div>Into The Black</div>
+                        </div>
+                        <div class="song">
+                            <img src="cherry.png" alt="">
+                            <div>Cherry</div>
+                        </div>
+                        <div class="song">
+                            <img src="running-up-that-hill.png" alt="">
+                            <div>Running Up That Hill</div>
+                        </div>
+                        <div class="song">
+                            <img src="twist-the-knife.png" alt="">
+                            <div>Twist The Knife</div>
+                        </div>
+                        <div class="song">
+                            <img src="sachio.png" alt="">
+                            <div>The theme of Sachio</div>
+                        </div>
+                    </div>
+                    <div id="song-album">
+                        <div>ALBUM</div>
+                        <div>TOY (ATRIP Remix)</div>
+                        <div>Written in the Stars (feat. Eric Turner)</div>
+                        <div>Shadow</div>
+                        <div>Kill For Love</div>
+                        <div>Cherry (Deluxe)</div>
+                        <div>Night Drive</div>
+                        <div>Closer To Grey</div>
+                        <div>メガロボクス オリジナル・サウンドトラック</div>
+                    </div>
+                    <div id="song-controls">
+                        <div>DATUM PŘIDÁNÍ</div>
+                        <div>1 hour ago</div>
+                        <div>3 hours ago</div>
+                        <div>16.8.2022</div>
+                        <div>30.6.2022</div>
+                        <div>20.5.2022</div>
+                        <div>5.12.2021</div>
+                        <div>10.2.2021</div>
+                        <div>11.9.2001</div>
+                    </div>
+                </div>
             </div>
         </section>
         <aside>

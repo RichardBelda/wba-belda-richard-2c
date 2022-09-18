@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900&amp;subset=latin,latin-ext"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <style>
         html,
         body,
@@ -140,10 +139,6 @@
             border-spacing: 0;
         }
 
-        * {
-            font-family: 'Lato';
-        }
-
         .full-width {
             width: 100%;
         }
@@ -151,6 +146,7 @@
         body {
             display: flex;
             flex-direction: column;
+            font-family: 'Lato';
         }
 
         aside {
@@ -168,21 +164,35 @@
 
         .content {
             flex-direction: column;
-            background-color: gray;
+            background-color: #1d1d1d;
         }
 
         #info {
             display: flex;
             align-items: center;
             min-height: 25%;
-            background-color: aqua;
+            background: linear-gradient(20deg , #a54e6d, #3c8a97);
         }
 
         #info-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 12em;
             height: 12em;
             background: rebeccapurple;
             margin: 1.7em;
+            border-radius: 0.3em;
+            background: linear-gradient(-20deg , #a54e6d, #3c8a97);
+            box-shadow: 0px 0px 10px 0px rgb(41, 41, 41);
+        }
+
+        #info-image-detail {
+            width: 2.6em;
+            height: 2.6em;
+            background-color: white;
+            rotate: 45deg;
+            border-radius: 0.8em;
         }
 
         #info-text {
@@ -190,10 +200,12 @@
             height: 12em;
             flex-direction: column;
             justify-content: flex-end;
+            gap: 0.5em;
         }
 
         span {
-            color: gray;
+            color: #b5a7af;
+            font-weight: 400;
         }
 
         footer {
@@ -204,6 +216,84 @@
             background-color: black;
             color: white;
             border-top: 1px solid grey;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            font-weight: 800;
+            color:white;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            color: white;
+        }
+
+        h3 {
+            font-size: 0.9em;
+            font-weight: 800;
+            color: white;
+        }
+
+        p {
+            font-size: 0.6em;
+        }
+
+        #interface {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+        }
+
+        #shuffle {
+            height: 1.3em;
+        }
+
+        .previous {
+            height: 0.9em;
+        }
+
+        #previous-flip {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        #pause{
+            height: 2em;
+        }
+
+        #replay {
+            height: 1.2em;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.6em;
+        }
+
+        #timebar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5em;
+        }
+
+        #timebar-bar {
+            display: flex;
+            justify-content: flex-start;
+            width: 40vh;
+            height: 4px;
+            background-color: #373737;
+            border-radius: 1em;
+        }
+
+        #timebar-bar>div {
+            background-color: #727272;
+            width: 35%;
+            border-radius: 1em;
         }
     </style>
 </head>
@@ -216,18 +306,18 @@
         <section class="content">
             <div id="info" class="full-width">
                 <div id="info-image">
-
+                    <div id="info-image-detail"></div>
                 </div>
                 <div id="info-text">
-                    <div>
+                    <h2>
                         playlist
-                    </div>
+                    </h2>
                     <h1>
                         Skladby, které se ti líbí
                     </h1>
-                    <div>
+                    <h3>
                         denowq <span>- 666 skladeb</span>
-                    </div>
+                    </h3>
                 </div>
             </div>
             <div>
@@ -242,12 +332,18 @@
         <div>
             ahoj
         </div>
-        <div>
-            <div>
-
+        <div id="interface">
+            <div id="controls">
+                <img id="shuffle" src="/shuffle.svg" alt="shuffle">
+                <img class="previous" src="/previous.svg" alt="previous">
+                <img id="pause" src="/pause.svg" alt="pause">
+                <img id="previous-flip" class="previous" src="/previous.svg" alt="previous">
+                <img id="replay" src="/replay.svg" alt="replay">
             </div>
-            <div>
-
+            <div id="timebar">
+                <p>1:35</p>
+                <div id="timebar-bar"><div></div></div>
+                <p>4:20</p>
             </div>
         </div>
         <div>
